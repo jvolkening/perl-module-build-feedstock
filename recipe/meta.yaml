@@ -25,6 +25,7 @@ requirements:
     - perl-inc-latest
   run:
     - perl
+    - perl-inc-latest
 
 test:
   imports:
@@ -33,9 +34,7 @@ test:
 about:
   home: https://github.com/Perl-Toolchain-Gang/Module-Build
   license: GPL-1.0-or-later OR Artistic-1.0-Perl
-  license_file:
-    - {{ environ["PREFIX"] }}/lib/perl5/core_perl/pod/perlartistic.pod
-    - {{ environ["PREFIX"] }}/lib/perl5/core_perl/pod/perlgpl.pod
+  license_file: LICENSE
   summary: Build and install Perl modules
 
 extra:
